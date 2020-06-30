@@ -1,0 +1,116 @@
+@import "vars";
+@import "global";
+@import "fonts";
+.header{
+     background-color: #eef1f3;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+   
+}
+.header__inner{
+    display: flex;
+    max-width: 530px;
+    align-items: center;
+    &-link{
+        border-radius: 36px;
+        background-color: $bg-s;
+        font-size: 14px;
+        line-height: 28px;
+        color: #ffffff;
+        height: 36px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+.header__author{
+    width: 173px;
+    position: relative;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 22px;
+   
+   
+    &-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $grey;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-name{
+        padding-left: 72px;
+        margin-bottom: 2px;
+        color: $dark-grey;
+        font-weight: 700;
+    }
+     &-price{
+         font-size: 15px;
+         color: $bg-s;
+         padding-left: 72px;
+         
+     }
+}
+.menu{
+    
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+
+    }
+}
+.menu__list li{
+    text-transform: uppercase;
+    display: inline-block;
+   a{
+        font-size: 15px;
+        color: $dark-grey;
+        font-weight: 500;
+   }
+    & + li{
+        margin-left: 25px;
+    }
+}
+.menu__search{
+    width: 360px;
+    form{
+         position: relative;
+    }
+    input{
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+        height: 46px;
+        border: 1px solid #d9dfe5;
+        outline: none;
+        padding-left: 25px;
+        &::placeholder{
+            font-size: 15px;
+            line-height: 30px;
+            color: #898f96;
+            
+        }
+    }
+    button{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        width: 70px;
+        cursor: pointer;
+        background-color: $bg-s;
+        border: none;
+    }
+}
