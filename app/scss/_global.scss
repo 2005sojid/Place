@@ -8,8 +8,12 @@ a{
     display: inline-block;
     text-decoration: none;
 }
+button{
+    font-family: 'Quicksand', sans-serif;
+}
 body{
-    font-family: 'Q-Regular', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
 ul, li{
     margin: 0;
